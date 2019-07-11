@@ -9,9 +9,9 @@ var lettersGuessed= [];
 
 // set letters to randomize//
 
-$(document).ready(function(){
+window.onload = function() {
     var computerGuess= letters[Math.floor(Math.random() * letters.length)];
-    computerGuess.push(letters)
+    lettersGuessed.push(computerGuess)
     console.log(computerGuess)
 
-})
+}
